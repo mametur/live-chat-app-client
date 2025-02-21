@@ -1,13 +1,14 @@
 //<Outlet /> is used by React Router to render different pages inside this layout.
 import { Outlet } from "react-router-dom";
 import { memo } from "react";
+import Navbar from "./Navbar";
 
 const MainLayout = memo(() => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Navbar */}
-      <header className="bg-blue-600 text-white p-4">
-        <h1 className="text-2xl font-bold">My App</h1>
+      <header>
+        <Navbar />
       </header>
 
       {/* Main content area */}

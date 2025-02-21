@@ -10,6 +10,7 @@ function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} /> {/* This is the default child route */}
         <Route path="about" element={<About />} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
       </Route>
     </Routes>
   );
